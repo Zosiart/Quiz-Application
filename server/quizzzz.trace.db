@@ -1,0 +1,8 @@
+2022-03-16 20:07:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "02-electric_stove"
+Data conversion error converting "02-electric_stove"; SQL statement:
+select activity0_.id as id1_0_0_, activity0_.consumption_in_wh as consumpt2_0_0_, activity0_.image_path as image_pa3_0_0_, activity0_.source as source4_0_0_, activity0_.title as title5_0_0_ from activity activity0_ where activity0_.id=? [22018-200]
+2022-03-16 21:40:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "02-electric_stove"
+Data conversion error converting "02-electric_stove"; SQL statement:
+select activity0_.id as id1_0_0_, activity0_.consumption_in_wh as consumpt2_0_0_, activity0_.image_path as image_pa3_0_0_, activity0_.source as source4_0_0_, activity0_.title as title5_0_0_ from activity activity0_ where activity0_.id=? [22018-200]

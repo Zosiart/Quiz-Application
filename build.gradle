@@ -1,0 +1,56 @@
+plugins {
+    id 'org.kordamp.gradle.jacoco' version '0.43.0'
+	id "io.freefair.lombok" version "6.4.1"
+}
+
+allprojects {
+	repositories {
+		mavenCentral()
+	}
+}
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'checkstyle'
+	apply plugin: 'jacoco'
+	
+	
+	group = 'oopp'
+	version = '1.0.0'
+	sourceCompatibility = "11"
+	checkstyle {
+		toolVersion "9.2.1"
+
+		ignoreFailures = false
+		maxErrors = 0
+		maxWarnings = 0
+		configFile = '../checkstyle.xml' as File
+	}
+
+	tasks.named('test') {
+		useJUnitPlatform()
+		finalizedBy jacocoTestReport 
+	}
+	jacocoTestReport {
+		reports {
+			xml.required = false
+			csv.required = false
+			html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+			}
+	}
+	
+	dependencies {
+		implementation 'org.apache.commons:commons-lang3:3.12.0'
+		implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.1'
+		
+		testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+		testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+		testImplementation 'org.mockito:mockito-core:4.1.0'
+
+		compileOnly 'org.projectlombok:lombok:1.18.22'
+		annotationProcessor 'org.projectlombok:lombok:1.18.22'
+
+		testCompileOnly 'org.projectlombok:lombok:1.18.22'
+		testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+	}
+}
