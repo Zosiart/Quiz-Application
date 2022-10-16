@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="parentContainer" prefHeight="893.0" prefWidth="1036.0" stylesheets="@../css/SettingsScreen.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.SettingsScreenCtrl">
+
+   
+       <VBox alignment="CENTER" maxWidth="747.0" prefHeight="893.0" prefWidth="747.0" stylesheets="@../css/main.css" StackPane.alignment="CENTER">
+        <Text fx:id="titleText" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" textAlignment="CENTER" wrappingWidth="526.13671875">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Text>
+        <Region maxHeight="120.0" minHeight="0.0" prefHeight="30.0" prefWidth="747.0" styleClass="margin" />
+        <Button fx:id="darkMode" minWidth="251.0" mnemonicParsing="false" onAction="#toggleDarkMode" text="Dark Mode">
+            <styleClass>
+                <String fx:value="dark" />
+                <String fx:value="rounded" />
+            </styleClass>
+        </Button>
+        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" prefHeight="60.0" prefWidth="747.0" styleClass="margin" VBox.vgrow="ALWAYS" />
+        <Button minWidth="251.0" mnemonicParsing="false" onAction="#showHelpScreen" text="Help">
+            <styleClass>
+                <String fx:value="functionality-button" />
+                <String fx:value="rounded" />
+            </styleClass>
+        </Button>
+        <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" prefHeight="60.0" prefWidth="747.0" styleClass="margin" VBox.vgrow="ALWAYS" />
+        <Button mnemonicParsing="false" onAction="#showAdminScreen" text="Admin Panel">
+            <styleClass>
+                <String fx:value="functionality-button" />
+                <String fx:value="rounded" />
+            </styleClass>
+        </Button>
+        <Region maxWidth="-Infinity" minHeight="0.0" prefHeight="60.0" prefWidth="747.0" styleClass="margin" />
+        <TextField fx:id="inputServerURLField" prefHeight="25.0" prefWidth="416.0" promptText="Room URL" styleClass="rounded">
+            <VBox.margin>
+                <Insets left="150.0" right="150.0" />
+            </VBox.margin>
+        </TextField>
+      <Region maxWidth="-Infinity" minHeight="0.0" prefHeight="30.0" prefWidth="747.0" styleClass="margin" />
+      <Button mnemonicParsing="false" onAction="#connectToServer" text="Connect">
+         <styleClass>
+            <String fx:value="functionality-button" />
+            <String fx:value="rounded" />
+         </styleClass>
+      </Button>
+    </VBox>
+    <StackPane alignment="TOP_LEFT" maxHeight="103.0" maxWidth="219.0" minHeight="103.0" minWidth="197.0" prefHeight="103.0" prefWidth="219.0" styleClass="padding, margin" stylesheets="@../css/main.css" StackPane.alignment="TOP_LEFT">
+        <Button fx:id="back" onAction="#exit" stylesheets="@../css/main.css" text="Back" StackPane.alignment="TOP_LEFT">
+            <styleClass>
+                <String fx:value="rounded" />
+                <String fx:value="exit" />
+            </styleClass>
+        </Button>
+    </StackPane>
+
+</StackPane>

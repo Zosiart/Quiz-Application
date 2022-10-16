@@ -1,0 +1,151 @@
+/*
+@font-face {
+  src: url('../fonts/FuturaPTLight.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTLightOblique.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTBook.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTBookOblique.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTMedium.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTMediumOblique.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTHeavy.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTHeavyOblique.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTDemi.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTDemiOblique.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTBold.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTBoldOblique.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTExtraBold.otf');
+}
+
+@font-face {
+  src: url('../fonts/FuturaPTExtraBoldOblique.otf');
+}*/
+* {
+  -fx-font-family: 'Futura PT Medium';
+  /*-fx-font-weight: bold;  for bold text*/
+}
+
+.root {
+  -fx-background-color: linear-gradient(to bottom right, #b5e48c, #1a759f);
+}
+
+.border {
+  -fx-border-color: #168AAD;
+  -fx-border-width: 7px;
+}
+
+.rounded {
+  -fx-border-radius: 100px;
+  -fx-background-radius: 105px;
+}
+
+.button {
+  -fx-background-color: #1A759F;
+  -fx-effect: innershadow(gaussian, black, 10, 0.3, 1, 1);
+  -fx-font-size: 30px;
+  -fx-padding: 10px 50px;
+  -fx-cursor: hand;
+}
+
+.exit:hover {
+  -fx-background-color: radial-gradient(focus-angle 45deg, focus-distance 5%, radius 99%, reflect, darkred, darkorange);
+  -fx-text-fill: white;
+}
+
+.settings:hover {
+  -fx-background-color: radial-gradient(focus-angle 45deg, focus-distance 5%, radius 99%, reflect, yellow, honeydew);
+}
+
+.functionality-button:hover {
+  -fx-background-color: radial-gradient(focus-angle 60deg, focus-distance 25%, radius 75%, reflect, greenyellow, white);
+}
+
+.game-button:hover {
+  -fx-background-color: radial-gradient(focus-angle 45deg, focus-distance 5%, radius 99%, reflect, cornflowerblue, greenyellow);
+}
+
+.dark:hover {
+  -fx-background-color: black;
+  -fx-text-fill: white;
+}
+
+
+
+.padding {
+  -fx-padding: 20px;
+}
+
+.no-padding {
+  -fx-padding: 0px;
+}
+
+.transparent {
+  -fx-background-color: transparent;
+}
+
+.scroll-pane > *{
+  -fx-background-color: transparent;
+}
+
+.margin {
+  -fx-background-color: transparent;
+}
+
+.label {
+  -fx-font-size: 100;
+}
+
+.label-box{
+  -fx-font-size: 100;
+  -fx-padding: 10px 20px;
+  -fx-background-color: #1A759F;
+  -fx-border-radius: 50px;
+  -fx-background-radius: 50px;
+}
+
+.wait {
+  -fx-font-size: 50;
+}
+
+.text-field {
+  -fx-font-size: 20;
+  -fx-padding: 10px 20px;
+}
+
+.bg {
+  -fx-background-color: linear-gradient(to bottom right, #b5e48c, #1a759f);
+}

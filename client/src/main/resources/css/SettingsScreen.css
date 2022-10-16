@@ -1,0 +1,23 @@
+@import 'main.css';
+
+.instruction {
+  -fx-font-size: 24px;
+}
+
+.scroll-pane, .scroll-pane > * {
+  -fx-background-color: transparent;
+}
+
+.scroll-pane {
+}
+
+.label {
+  -fx-text-alignment: justify;
+  -fx-wrap-text: true;
+  -fx-max-width: 900px;
+}
+
+.header, .header > * {
+  -fx-font-size: 30px;
+  -fx-font-family: 'Futura PT Extra Bold';
+}

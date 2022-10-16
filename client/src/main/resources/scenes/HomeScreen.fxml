@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="parentContainer" stylesheets="@../css/HomeScreen.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.HomeScreenCtrl">
+   <VBox prefHeight="200.0">
+      <children>
+          <StackPane styleClass="padding, margin" stylesheets="@../css/main.css">
+              <Button fx:id="settings" mnemonicParsing="false" onAction="#goToSettings" text="Settings" StackPane.alignment="TOP_RIGHT">
+                  <styleClass>
+                      <String fx:value="settings" />
+                      <String fx:value="rounded" />
+                  </styleClass>
+            </Button>
+              <Button fx:id="back" onAction="#exitApp" stylesheets="@../css/main.css" text="Exit" StackPane.alignment="TOP_LEFT">
+                  <styleClass>
+                      <String fx:value="exit" />
+                      <String fx:value="rounded" />
+                  </styleClass>
+            </Button>
+          </StackPane>
+          <HBox alignment="CENTER">
+              <children>
+      
+            
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="0.0" prefHeight="638.0" stylesheets="@../css/main.css">
+                      <Text fx:id="titleText" strokeType="OUTSIDE" strokeWidth="0.0" text="Quizzzz!" textAlignment="CENTER" wrappingWidth="526.13671875">
+                          <font>
+                              <Font size="96.0" />
+                          </font>
+                      </Text>
+                      <Region maxHeight="178.0" minHeight="0.0" prefHeight="40.0" styleClass="margin" />
+      
+                            <Region maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" prefHeight="55.0" styleClass="margin" VBox.vgrow="ALWAYS" />
+                      <Button fx:id="singleplayerButton" mnemonicParsing="false" onAction="#showUsernameScreenSingle" prefHeight="84.0" prefWidth="290.0" style="-fx-border-radius: 1000px;" text="Play">
+      
+                                <font>
+                              <Font size="40.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="functionality-button" />
+                              <String fx:value="rounded" />
+                          </styleClass>
+                      </Button>
+                      <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="33.0" styleClass="margin" VBox.vgrow="ALWAYS" />
+                      <Button fx:id="multiplayerButton" mnemonicParsing="false" onAction="#showUsernameScreenMulti" prefHeight="84.0" prefWidth="290.0" style="-fx-border-radius: 1000px;" text="Play together">
+                          <font>
+                              <Font size="40.0" />
+                          </font>
+                          <styleClass>
+                              <String fx:value="functionality-button" />
+                              <String fx:value="rounded" />
+                          </styleClass>
+                      </Button>
+                      <Region maxHeight="-Infinity" minHeight="20" prefHeight="89.0" styleClass="margin" VBox.vgrow="ALWAYS" />
+                  </VBox>
+               <Region maxHeight="178.0" minHeight="0.0" minWidth="0.0" prefHeight="40.0" prefWidth="150.0" styleClass="margin" />
+                  <VBox alignment="CENTER" minWidth="300.0">
+                      <children>
+                          <Region maxHeight="178.0" minHeight="0.0" minWidth="0.0" prefHeight="63.0" styleClass="margin" />
+                          <TableView fx:id="leaderboard" focusTraversable="false" minHeight="300.0" minWidth="300.0" prefHeight="600.0">
+                              <columns>
+                                  <TableColumn fx:id="playerPosition" editable="false" prefWidth="125.0" sortable="false" text="Position" />
+                                  <TableColumn fx:id="playerUsername" editable="false" prefWidth="351.0" sortable="false" text="Player name" />
+                                  <TableColumn fx:id="playerScore" editable="false" maxWidth="750.0" prefWidth="199.0" sortType="DESCENDING" sortable="false" text="Score" />
+                              </columns>
+                          </TableView>
+                          <Region maxHeight="178.0" minHeight="0.0" minWidth="0.0" prefHeight="30.0" styleClass="margin" />
+                          <Button fx:id="refreshButton" alignment="CENTER" mnemonicParsing="false" onAction="#refresh" prefHeight="84.0" prefWidth="290.0" style="-fx-border-radius: 1000px;" text="Refresh" textAlignment="CENTER">
+                              <font>
+                                  <Font size="40.0" />
+                              </font>
+                              <styleClass>
+                                  <String fx:value="functionality-button" />
+                                  <String fx:value="rounded" />
+                              </styleClass>
+                          </Button>
+                      </children>
+                  </VBox>
+              </children>
+          </HBox>
+      </children>
+   </VBox>
+
+</StackPane>

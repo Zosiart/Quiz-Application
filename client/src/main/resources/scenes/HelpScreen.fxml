@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane styleClass="bg" stylesheets="@../css/HelpScreen.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.HelpScreenCtrl">
+    <StackPane prefHeight="100.0" styleClass="padding">
+        <Button fx:id="back" onAction="#back" styleClass="exit, rounded" text="Back" StackPane.alignment="TOP_LEFT" />
+    </StackPane>
+
+    <VBox alignment="CENTER" maxWidth="1000" StackPane.alignment="CENTER">
+        <Region maxHeight="40" minHeight="40" VBox.vgrow="ALWAYS" />
+        <Label alignment="CENTER" styleClass="wait" text="Help page" />
+        <Region maxHeight="60" minHeight="60" VBox.vgrow="ALWAYS" />
+        <ScrollPane hbarPolicy="NEVER" styleClass="rounded, no-padding" VBox.vgrow="ALWAYS">
+            <VBox alignment="CENTER" maxWidth="Infinity" spacing="10">
+                <Label styleClass="header" text="Starting the game" VBox.vgrow="ALWAYS" />
+                <Label maxWidth="-Infinity" styleClass="instruction" text="Firstly, you should fill in the Server field (no matter if you play singleplayer or multiplayer. Then you choose which variant of the game you want to play. You will be redirected to another screen where you have to insert your user name. After that depending if you chose single player or multiplayer you will either start a game or join the waiting room" VBox.vgrow="ALWAYS" />
+                <Label styleClass="header" text="Waiting Room" VBox.vgrow="ALWAYS" />
+                <Label styleClass="instruction" text="In the waiting room you see all the users you will play with. If you want to start the match click the Start button" VBox.vgrow="ALWAYS" />
+                <Label styleClass="header" text="Question types" />
+                <Label styleClass="instruction" text="Different types of multiple choice questions, asking you to guess the correct energy consumption or to compare different activities." VBox.vgrow="ALWAYS" />
+                <Label styleClass="instruction" text="Open questions, in which you should try to estimate the energy consumption of a certain activity by inputting a number yourself. The closer you are to the correct answer, the more points you get!" VBox.vgrow="ALWAYS" />
+                <Label styleClass="header" text="Jokers" />
+                <Label styleClass="instruction" text="Throughout the game, you will have 3 power-ups to use (so called jokers):" VBox.vgrow="ALWAYS" />
+                <Label styleClass="instruction" text="1. Skip the current question joker (Symbol: >>). You can use this joker when you're not sure how to answer a certain question and want to replace it for a new one. This means that you get a second chance an the game will be one question longer. However, keep in mind you won't receive any points for the question you skipped and you will also lose your streak!" VBox.vgrow="ALWAYS" />
+                <Label styleClass="instruction" text="2. Verify you answer joker (Symbol: ✓/✗). This joker allows you to use some help with answering the questions. If you use it on a question wih 3 possible answer options, one of the incorrect ones will be eliminated. If you use it on an open Estimation question, you will receive some feedback on whether your guess is close enough to the correct answer." VBox.vgrow="ALWAYS" />
+                <Label styleClass="instruction" text="3. Double points joker (Symbol: x2). It's as simple as it sounds! When you use this joker, the points you win for the current question will double." VBox.vgrow="ALWAYS" />
+                <Label styleClass="header" text="Leaderboard" />
+                <Label styleClass="instruction" text="If you play single player, leaderboard will be displayed at the end of the match. It will display all of your previous scores. If you play multiplayer, it will display the results of the current match and will appear after every question" VBox.vgrow="ALWAYS" />
+                <Label styleClass="header" text="Points" />
+                <Label styleClass="instruction" text="Depending on the correctness of the answer and quickness you will get different amount of points" VBox.vgrow="ALWAYS" />
+            </VBox>
+        </ScrollPane>
+        <Region maxHeight="20" minHeight="20" VBox.vgrow="ALWAYS" />
+    </VBox>
+</StackPane>

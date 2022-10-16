@@ -1,0 +1,47 @@
+@import 'main.css';
+
+.table-view {
+    -fx-border-color: #168AAD;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 10px;
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label {
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-background-color:  linear-gradient(to bottom, #1a759f, #1e6091);
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .table-cell {
+    -fx-font-size: 27px;
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color:  linear-gradient(to bottom, #1a759f, #1e6091);
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #1a759f, #1e6091);
+}

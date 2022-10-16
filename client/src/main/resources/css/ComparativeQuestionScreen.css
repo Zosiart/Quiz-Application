@@ -1,0 +1,27 @@
+@import 'main.css';
+
+
+.progress-bar .track {
+  -fx-background-color: #CED4DA;
+
+}
+
+.progress-bar .bar {
+  -fx-background-color: #1E6091;
+  -fx-border-radius: 100px;
+  -fx-background-radius: 100px;
+}
+
+.joker {
+  -fx-background-color: #FFFFFF;
+  -fx-background-radius: 20px;
+}
+
+.joker:hover {
+  -fx-background-color: #A6A6A6;
+  -fx-font-weight: bold;
+}
+
+.answer:disabled {
+  -fx-opacity: 0.8;
+}

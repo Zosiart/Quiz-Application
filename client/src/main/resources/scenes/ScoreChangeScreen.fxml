@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane prefHeight="920.0" prefWidth="1189.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.ScoreChangeScreenCtrl">
+
+    <StackPane styleClass="padding">
+        <VBox alignment="CENTER" maxWidth="1920.0" prefHeight="1500.0" prefWidth="1920.0" StackPane.alignment="CENTER">
+            <Region maxHeight="20" minHeight="20" VBox.vgrow="ALWAYS" />
+            <Label fx:id="scoreGained" alignment="CENTER" prefHeight="80.0" style="-fx-font-size: 60;" styleClass="label-box" text="+!ENTER SCORE!" />
+            <Region maxHeight="40.0" minHeight="20" VBox.vgrow="ALWAYS" />
+            <StackPane>
+                <Region maxHeight="70" minHeight="70" VBox.vgrow="ALWAYS" />
+                <Label fx:id="scoreTotal" alignment="CENTER" prefHeight="80.0" style="-fx-font-size: 60;" styleClass="label-box" text="Score: !ENTER SCORE!" />
+            </StackPane>
+            <Region maxHeight="40" minHeight="40" VBox.vgrow="ALWAYS" />
+            <StackPane>
+                <Region maxHeight="70" minHeight="70" VBox.vgrow="ALWAYS" />
+                <Label fx:id="scoreStreak" alignment="CENTER" prefHeight="80.0" style="-fx-font-size: 60;" styleClass="label-box" text="Streak: !ENTER SCORE!" />
+            </StackPane>
+        </VBox>
+    </StackPane>
+    <StackPane maxHeight="132.0" maxWidth="245.0" prefHeight="132.0" prefWidth="245.0" styleClass="padding, margin" stylesheets="@../css/ScoreChangeScreen.css" StackPane.alignment="BOTTOM_LEFT">
+        <children>
+            <Button fx:id="leave" onAction="#exit" text="Leave" StackPane.alignment="BOTTOM_LEFT">
+            <styleClass>
+               <String fx:value="exit" />
+               <String fx:value="rounded" />
+            </styleClass></Button>
+        </children>
+    </StackPane>
+    <stylesheets>
+        <URL value="@../css/main.css" />
+        <URL value="@../css/ScoreChangeScreen.css" />
+    </stylesheets>
+
+
+
+
+
+
+</StackPane>
