@@ -17,14 +17,14 @@ The game supports
 
 ## Group members
 
-| Profile Picture | Name | Email |
-|---|---|---|
-| ![](https://gitlab.ewi.tudelft.nl/uploads/-/system/user/avatar/4517/avatar.png?width=400) | Stanisław Howard | S.M.Howard@student.tudelft.nl |
-| ![](https://gitlab.ewi.tudelft.nl/uploads/-/system/user/avatar/4773/avatar.png?width=400) | Toma Volentir | T.Volentir@student.tudelft.nl |
-| ![](https://cdn.discordapp.com/attachments/943585524654936145/943585743555661886/avatar.png) | Zofia Rogacka-Trojak | z.rogacka-trojak@student.tudelft.nl |
-| ![](https://gitlab.ewi.tudelft.nl/uploads/-/system/user/avatar/4948/avatar.png?width=400) | Zhenya Yancheva | Z.Y.Yancheva-1@student.tudelft.nl |
-| ![](https://gitlab.ewi.tudelft.nl/uploads/-/system/user/avatar/4862/avatar.png?width=400) | Timur Mukminov | T.I.Mukminov@student.tudelft.nl |
-| ![](https://gitlab.ewi.tudelft.nl/uploads/-/system/user/avatar/4669/avatar.png?width=400) | Robert Kurvits | R.Kurvits@student.tudelft.nl |
+| Name | Email |
+|---|---|
+| Stanisław Howard | S.M.Howard@student.tudelft.nl |
+| Toma Volentir | T.Volentir@student.tudelft.nl |
+| Zofia Rogacka-Trojak | z.rogacka-trojak@student.tudelft.nl |
+| Zhenya Yancheva | Z.Y.Yancheva-1@student.tudelft.nl |
+| Timur Mukminov | T.I.Mukminov@student.tudelft.nl |
+| Robert Kurvits | R.Kurvits@student.tudelft.nl |
 
 
 ## How to run it
@@ -64,5 +64,3 @@ The minimum requirement is 5 activities with distinct consumptions and 2 activit
   - Improve question generation
   - And much more!
 - Submit a merge request, our team will give you feedback in no time!
-
-## Copyright / License (opt.)
